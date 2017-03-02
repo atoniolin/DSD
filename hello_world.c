@@ -16,12 +16,12 @@
 #define ALT_CI_ALTFP_MULT(A,B) __builtin_custom_fnff(ALT_CI_ALTFP_MULT_N,(A),(B))
 
 // Test case 1
-#define step 5
-#define N 52
+// #define step 5
+// #define N 52
 
 // Test case 2
-//#define step 0.1
-//#define N 2551
+#define step 0.1
+#define N 2551
 
 //Test case 3
 //#define step 0.001
@@ -35,28 +35,7 @@ void generateVector(float x[N])
 	for (i=1; i<N; i++)
 		x[i] = ALT_CI_ALTFP_ADD_SUB(x[i-1],step);
 }
-/*
-float sumVector(float x[])
-{
-	int i = 1;
-	float sum = 0;
-	float temp, temp2, temp3;
-	for( ; i < N; i++){
-		//implements the cosine and floor function
-		temp = cos(floor(ALT_CI_ALTFP_MULT(x[i],0.25))-32);
-		//implements x^2
-		temp2 = ALT_CI_ALTFP_MULT(x[i],x[i]);
-		//implements x^2cos(floor(x/4)-32)
-		temp = ALT_CI_ALTFP_MULT(temp, temp2);
-		//implements 0.5x
-		temp3 = ALT_CI_ALTFP_MULT(0.5, x[i]);
-		//implements 0.5x + x^2cos(floor(x/4)-32)
-		temp3 = ALT_CI_ALTFP_ADD_SUB(temp3, temp);
-		//implements the accumulation function
-		sum = ALT_CI_ALTFP_ADD_SUB(sum, temp3);
-	}
-	return sum;
-}*/
+
 
 float sumVector(float x[])
 {
