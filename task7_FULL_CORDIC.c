@@ -20,12 +20,12 @@
 //#define N 52
 
 // Test case 2
-#define step 0.1
-#define N 2551
+// #define step 0.1
+// #define N 2551
 
 //Test case 3
-//#define step 0.001
-//#define N 255001
+#define step 0.001
+#define N 255001
 
 // Generates the vector x and stores it in the memory
 void generateVector(float x[N])
