@@ -11,7 +11,6 @@
 #include <unistd.h>
 #include <system.h>
 #include <stdio.h>
-#include <math.h>
 #define ALT_CI_COMPLEXEXPRESSION_0(A) __builtin_custom_fnf(ALT_CI_COMPLEXEXPRESSION_0_N,(A))
 #define ALT_CI_FP_ADD_0(A,B) __builtin_custom_fnff(ALT_CI_FP_ADD_0_N,(A),(B))
 
