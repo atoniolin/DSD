@@ -1,6 +1,6 @@
 /*
- * Task 7 example which implements y = 0.5x + x^2cos(floor(x/4)-32); for x in [0,N] in one custom instruction.
- *
+ * Task 8 example which implements y = 0.5x + x^2cos(floor(x/4)-32); for x in [0,N] in one custom instruction.
+ * The overall add is performed in floating-point adder hardware.
  *
 */
 #include <stdlib.h>
