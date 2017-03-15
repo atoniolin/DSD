@@ -33,7 +33,7 @@ void generateVector(float x[N])
 	int i;
 	x[0] = 0;
 	for (i=1; i<N; i++)
-		x[i] = ALT_CI_FP_ADD_0(x[i-1],step);
+		x[i] = x[i-1] + step;
 }
 
 
